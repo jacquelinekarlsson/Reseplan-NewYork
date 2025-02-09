@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jackie & Mattias in NEW YORK</title>
+  <style>
+    /* --------- FONTS & BASIC STYLING --------- */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap');
+
+    /* BODY - BAKGRUNDSBILD & MÖRK STIL */
+    body {
+      margin: 0;
+      padding: 0;
+      /* Bakgrundsbild med NYC-tema */
+      background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/New_York_City_at_night_HDR.jpg/1024px-New_York_City_at_night_HDR.jpg") 
+                  no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: #f0f0f0; /* Ljus text mot mörk bakgrund */
+      min-height: 100vh;
+      /* Möjliggör scrollning vid behov */
+      overflow-y: auto; 
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 800px;
+      background-color: rgba(0, 0, 0, 0.8); /* Mörkare, halvtransparent bakgrund */
+      margin: 4rem auto; /* Centrerar containern */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.3); 
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* Huvudrubrik i snygg skrivstil */
+    .header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 0 0 10px #ffb3ff, 2px 2px 8px #000;
+    }
+
+    .header p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #ff00ff, #444, #ff00ff);
+      margin: 2rem 0;
+    }
+
+    /* DAGENS RUBRIKER */
+    .day-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff00ff;
+      text-shadow: 0 0 5px #ff00ff, 1px 1px 5px #000;
+    }
+
+    /* DAGENS AKTIVITETER */
+    .day-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .activity {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .image-container {
+      width: 180px;
+      margin-right: 1.5rem;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    }
+
+    .activity-details {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    /* Namn på restaurang/aktivitet */
+    .activity-name {
+      font-family: 'Dancing Script', cursive;
+      color: #FFE083;
+      text-shadow: 0 0 5px #FFE083, 1px 1px 5px #000;
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    /* TID - Hela raden i bold */
+    .activity-time {
+      font-size: 1rem;
+      color: #ff00ff;
+      margin-bottom: 0.5rem;
+      font-weight: bold;  /* Se till att .activity-time är fetstil */
+    }
+
+    /* Adress */
+    .activity-address {
+      font-size: 0.95rem;
+      color: #ddd;
+      margin-bottom: 0.8rem;
+    }
+
+    /* Beskrivning */
+    .restaurant-description {
+      font-size: 0.95rem;
+      color: #ddd;
+      line-height: 1.4;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 2rem;
+    }
+
+    /* FLYG-IKONER */
+    .flight-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .icon-plane {
+      width: 50px;
+      margin-right: 1rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #ddd;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Jackie &amp; Mattias in NEW YORK</h1>
+    <p>Thursday the 13th - Monday the 17th</p>
+  </div>
+
+  <hr />
+
+  <!-- THURSDAY -->
+  <div class="day-section">
+    <div class="day-title">Thursday, the 13th of February:</div>
+
+    <div class="activity">
+      <div class="image-container">
+        <img 
+          src="https://static01.nyt.com/images/2022/10/26/dining/26restoration6/merlin_215212299_454abad8-0960-41f1-a280-d7d4c50418eb-articleLarge.jpg?quality=75&auto=webp&disable=upscale" 
+          alt="The Dining Room RH Guesthouse" />
+      </div>
+      <div class="activity-details">
+        <div class="activity-name">Dinner at The Dining Room RH Guesthouse</div>
+        <div class="activity-time"><strong>Time: 8:00 PM</strong></div>
+        <div class="activity-address">Address: 55 Gansevoort St, New York, NY 10014</div>
+        <div class="restaurant-description">
+          Exclusive dining experience in a luxurious setting.<br/>
+          Located near the heart of Manhattan, serving modern American cuisine.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- FRIDAY -->
+  <div class="day-section">
+    <div class="day-title">Friday, the 14th of February:</div>
+
+    <div class="activity">
+      <div class="image-container">
+        <img 
+          src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/newyorkstate/tao_ny_photo_credit_patrick_mccleod-2_a9553fc7-f6bc-79b2-73b4b2a1b508b67a.jpg" 
+          alt="TAO Uptown" />
+      </div>
+      <div class="activity-details">
+        <div class="activity-name">Valentine’s dinner at TAO Uptown</div>
+        <div class="activity-time"><strong>Time: 10:30 PM</strong></div>
+        <div class="activity-address">Address: 42 E 58th St, New York, NY 10022</div>
+        <div class="restaurant-description">
+          A spectacular Pan-Asian restaurant, known for its lavish interior décor and lively atmosphere.
+        </div>
+      </div>
+    </div>
+
+    <div class="activity">
+      <div class="image-container">
+        <img 
+          src="https://cloudinary-assets.dostuffmedia.com/res/dostuff-media/image/upload/venue-400585/1493145353.png" 
+          alt="Checkmate" />
+      </div>
+      <div class="activity-details">
+        <div class="activity-name">Valentine’s Party at Checkmate</div>
+        <div class="activity-time"><strong>Time: After dinner</strong></div>
+        <div class="activity-address">Address: 35 W 21st St, New York, NY 10010</div>
+        <div class="restaurant-description">
+          Nightclub with a modern vibe, featuring dance floors, DJs, and special Valentine’s-themed cocktails.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- SATURDAY -->
+  <div class="day-section">
+    <div class="day-title">Saturday, the 15th of February:</div>
+    
+    <div class="activity">
+      <div class="image-container">
+        <img 
+          src="https://images.squarespace-cdn.com/content/v1/64f2b2b3af8a9e3a12ca7556/7657decd-e7d3-4135-ab81-7e9921a25cd5/web+POSTCARD+SATURDAY+NITE.png?format=1000w" 
+          alt="LIPS Restaurant" />
+      </div>
+      <div class="activity-details">
+        <div class="activity-name">Drag Show &amp; Dinner at LIPS</div>
+        <div class="activity-time"><strong>Time: 8:30 PM</strong></div>
+        <div class="activity-address">Address: 227 E 56th St, New York, NY 10022</div>
+        <div class="restaurant-description">
+          Fun-filled drag show experience with dinner and entertainment, perfect for a memorable Saturday night.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- HOTEL SECTION -->
+  <div class="day-section">
+    <div class="day-title">Hotel:</div>
+    <div class="activity">
+      <div class="image-container">
+        <img 
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/08/aa/b4/deluxe-king.jpg?w=700&h=-1&s=1" 
+          alt="The Standard High Lane" />
+      </div>
+      <div class="activity-details">
+        <div class="activity-name">The Standard, High Lane</div>
+        <div class="activity-time"><strong>Check-in: 13/2 | Check-out: 17/2</strong></div>
+        <div class="activity-address">Address: 848 Washington St, New York, NY 10014, USA</div>
+        <div class="restaurant-description">
+          Located in the Meatpacking District, featuring a rooftop bar and scenic views near the High Line park.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- FLIGHTS SECTION -->
+  <div class="day-section">
+    <div class="day-title">Flights:</div>
+    
+    <div class="flight-row">
+      <img class="icon-plane" 
+           src="https://banner2.cleanpng.com/20190215/phg/kisspng-airplane-scalable-vector-graphics-flight-aircraft-transports-et-horaires-imt-mines-als-1713907165513.webp" 
+           alt="Plane taking off icon" />
+      <div class="description">
+        Jackie ARN <strong>10:45</strong> 13/2 -> EWR <strong>13:35</strong> 13/2
+      </div>
+    </div>
+
+    <div class="flight-row">
+      <img class="icon-plane" 
+           src="https://banner2.cleanpng.com/20190215/phg/kisspng-airplane-scalable-vector-graphics-flight-aircraft-transports-et-horaires-imt-mines-als-1713907165513.webp" 
+           alt="Plane taking off icon" />
+      <div class="description">
+        Mattias ARN <strong>06:10</strong> 13/2 -> JFK <strong>14:00</strong> 13/2
+      </div>
+    </div>
+
+    <div class="flight-row">
+      <img class="icon-plane"
+           src="https://banner2.cleanpng.com/20180420/ulw/ave5f7rg9.webp"
+           alt="Plane landing icon" />
+      <div class="description">
+        Jackie EWR <strong>17:30</strong> 17/2 -> ARN <strong>07:20</strong> 18/2
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>Is it that sweet? I guess so...</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
